@@ -1,0 +1,9 @@
+.box {
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 99%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
