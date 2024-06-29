@@ -1,13 +1,22 @@
+import { FaUser, FaPhoneAlt } from "react-icons/fa";
 import css from "./Contact.module.css";
 
-export default function Contact({ data: { id, name, number }, onDelete }) {
-    return (
-        <div className={css.card}>
-            <p className={css.name}>{name}</p>
-            <p className={css.number}>{number}</p>
-            <button onClick={() => onDelete(id)} className={css.btn}>
-                Delete
-            </button>
-        </div>
-    );
+export default function Contact({ data, onDelete }) {
+  const { id, name, number } = data;
+
+  return (
+    <div className={css.container}>
+      <div className={css.info}>
+        <FaUser />
+        <p>{name}</p>
+      </div>
+      <div className={css.info}>
+        <FaPhoneAlt />
+        <p>{number}</p>
+      </div>
+      <button className={css.btn} type="button" onClick={() => onDelete(id)}>
+        Delete
+      </button>
+    </div>
+  );
 }

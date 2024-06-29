@@ -1,8 +1,5 @@
-.list {
-  list-style: none;
-  padding: 0;
-}
-
-.item {
-  margin-bottom: 10px;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }

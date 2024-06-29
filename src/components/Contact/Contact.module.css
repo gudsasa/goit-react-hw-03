@@ -1,27 +1,31 @@
-.card {
-    display: flex;
-    gap: 5px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  gap: 10px;
+  max-width: 380px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
-.name,
-.number {
-    margin: 0;
+.info {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
 }
 
 .btn {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #9f9c9c;
-    color: #000000;
-    cursor: pointer;
+  min-width: 49px;
+  height: 20px;
+  font-size: 18px;
+  border: none;
+  background-color: #FF4E4E;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  align-self: center;
 }
-
 .btn:hover {
-    background-color: #c82333;
+  background-color: #FF7070;
 }

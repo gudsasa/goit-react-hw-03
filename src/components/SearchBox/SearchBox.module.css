@@ -1,9 +1,21 @@
-.box {
-    margin-bottom: 20px;
+.container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 10px;
+  max-width: 400px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .input {
-    width: 99%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 350px;
+  height: 25px;
+  color: black;
+  font-size: 18px;
+  padding-left: 16px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid black;
 }

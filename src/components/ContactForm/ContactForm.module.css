@@ -1,33 +1,48 @@
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 10px;
-  border: 1px solid #000000;
-  border-radius: 10px;
-
-  margin-bottom: 20px;
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+    max-width: 400px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
-.field {
-  display: flex;
-  flex-direction: column;
+.input {
+    width: 350px;
+    height: 25px;
+    color: black;
+    font-size: 18px;
+    padding-left: 16px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.error {
+    color: rgb(247, 5, 5);
+}
+
+.fieldGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .btn {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #000000;
-  cursor: pointer;
+    min-width: 169px;
+    height: 56px;
+    font-size: 18px;
+    border: none;
+    background-color: #4e75ff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    align-self: center;
 }
-
 .btn:hover {
-  background-color: #0056b3;
-}
-
-.errorMessage {
-  color: red;
-  font-size: 0.8rem;
+    background-color: #6C8CFF;
 }
